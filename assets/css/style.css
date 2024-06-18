@@ -1,0 +1,12 @@
+/*header selector*/
+header{
+    background-color: aquamarine;
+}
+/*main selector*/
+main{
+    background-color: burlywood;
+}
+/*footer selector*/
+footer{
+    background-color: darkgray;
+}

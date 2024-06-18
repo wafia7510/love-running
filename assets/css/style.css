@@ -1,3 +1,9 @@
+/* asteric selector to override all the sectors styling*/
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 /*header selector*/
 header{
     background-color: aquamarine;

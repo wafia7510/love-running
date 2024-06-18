@@ -25,13 +25,32 @@ header{
     box-shadow: 0 2px 2px #3a3a3a;
     
 }
+/* add a decoration selector to decorate it to none style as its descendent of header*/
+header a{
+    text-decoration: none;
+    color: inherit;
+}
 h1{
-    font-family: 'Lato', sans-serif;   
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;/*transforming text to uppercase*/
+    color: #252525;  
 }
 /*main selector*/
 main{
     background-color: burlywood;
     flex: 1 0 auto;
+}
+#menu{
+    list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+#menu > li{
+    margin-bottom: 1em;
+    
+}
+.active{
+    border-bottom: 1px solid #3a3a3a;
 }
 /*footer selector*/
 footer{

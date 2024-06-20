@@ -189,7 +189,7 @@ hr{
         background-color: rgba(60, 60, 60, 0.6);
     }
     input[type="text"],input[type="email"]{
-        color: #ffffff;
+        color: #090808;
         opacity: 0.5;
         border: 1px solid #fafafa;
         border-radius: 2px;
@@ -288,7 +288,7 @@ input[type="email"]:hover {
 }
 .join-button:hover{
     background-color: #fafafa;
-    color: 454b1b;
+    color: #252525;
 }
 
     

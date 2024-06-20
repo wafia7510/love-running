@@ -271,7 +271,7 @@ hr{
         
     }
 
-    main #signup{
+   #signup{
         background-position: center;
         position: relative;
         
@@ -301,6 +301,12 @@ input[type="email"]:hover {
     #photo{
         column-count: 4;
         
+    }
+    #signup-form{
+        position: absolute;
+        top: 30px;
+        left: 10%;
+        max-width: 400px;
     }
 
 }

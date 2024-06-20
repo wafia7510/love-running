@@ -23,6 +23,9 @@ h1, h2, h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+.hidden-heading{
+    display: none;
+}
 
 /* Header */
 header {
@@ -143,6 +146,13 @@ hr{
     align-items: center;
     justify-content: center;
 }
+#photo img{
+    width: 100%;
+    
+}
+#photo{
+    line-height: 0;
+}
 /* Footer */
 #social-networks{
     text-align: center;
@@ -156,6 +166,61 @@ hr{
     font-size: 160%;
     padding:5%;
     color:#3a3a3a;
+
+}
+@media screen and (min-width:320px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main #signup{
+        background: url("../images/signup-image.webp") no-repeat 75%/cover;
+        flex-grow: 1;
+        margin: 20px 10%;
+        padding: 30px;
+    }
+    #signup h2{
+        color: #fafafa;
+        margin-bottom: 20px;
+    }
+    #signup-form{
+        color: #ffffff;
+        padding: 20px;
+        background-color: rgba(60, 60, 60, 0.6);
+    }
+    input[type="text"],input[type="email"]{
+        color: #ffffff;
+        opacity: 0.5;
+        border: 1px solid #fafafa;
+        border-radius: 2px;
+        margin: 5px 0 20px;
+        height: 25px;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .radio-button{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .join-button {
+        margin-top: 20px;
+        border-radius: 2px;
+        padding: 15px 32px;
+        font-size: 100%;
+        background-color: #454b1b;
+        color: #fafafa;
+    }
+}
+@media screen and (min-width:576px){
+    #photo{
+        column-count: 2;
+        column-gap: 0;
+    }
+    
+   
 
 }
 /* add media query for screen from tablet to large screen*/
@@ -201,12 +266,43 @@ hr{
         text-align: end;
         align-self: flex-end;
     }
+    #photo{
+        column-count: 3;
+        
+    }
+
+    main #signup{
+        background-position: center;
+        position: relative;
+        
+    }
+    #signup-form{
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        max-width: 400px;
+    }
+    input[type="text"]:hover,
+input[type="email"]:hover {
+    border-color: #f16c6b;
+}
+.join-button:hover{
+    background-color: #fafafa;
+    color: 454b1b;
+}
+
+    
 
 }
 @media screen and (min-width:992px){
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a; 
     }
+    #photo{
+        column-count: 4;
+        
+    }
+
 }
 @media screen and (min-width:1200px){
     #benefits{
@@ -236,4 +332,23 @@ hr{
         align-self: flex-start;
         
     }
+   
+
+}
+#times{
+    display: flex;
+    flex-wrap: wrap;
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+}
+#times div{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+#times h3{
+  color: #fafafa;
 }
